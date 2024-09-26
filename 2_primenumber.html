@@ -1,0 +1,13 @@
+let n = 10;
+
+if (n <= 1) {
+    console.log("false");
+} else {
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            console.log("false");
+            return; // Exit early if a divisor is found
+        }
+    }
+    console.log("true");
+}

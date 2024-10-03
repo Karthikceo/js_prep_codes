@@ -1,0 +1,13 @@
+function factorial(num) {
+    if (num === 0 || num === 1) {
+        return 1;
+    }
+    return num * factorial(num - 1);
+}
+let n = 3
+let m = 1
+let p = 2
+let e = 1
+let pencils = factorial(n) / (factorial(p) * factorial(n - p))
+let erasers = factorial(m) / (factorial(e) * factorial(m - e))
+console.log(pencils*erasers)
